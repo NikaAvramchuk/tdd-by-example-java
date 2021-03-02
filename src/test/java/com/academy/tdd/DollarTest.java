@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class MultiCurrencyWallet {
+public class DollarTest {
 
     @Test
     public void testMultiplication() {
