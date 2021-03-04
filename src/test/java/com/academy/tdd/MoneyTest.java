@@ -93,6 +93,6 @@ public class MoneyTest {
         Bank bank = new Bank();
         bank.addRate("CHF", "USD", 2);
         Money result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
-        assertEquals(Money.dollar(10),result);
+        assertEquals(result, Money.dollar(10));
     }
 }
