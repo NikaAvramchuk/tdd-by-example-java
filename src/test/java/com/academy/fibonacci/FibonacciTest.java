@@ -14,7 +14,7 @@ public class FibonacciTest {
     private int fib(int number) {
         if(number==0) return 0;
         if(number<=2) return 1;
-        return 2;
+        return fib(number-1)+ fib(number-2);
     }
 
     @DataProvider
@@ -23,7 +23,9 @@ public class FibonacciTest {
                 {0,0},
                 {1,1},
                 {2,1},
-                {3,2}
+                {3,2},
+                {8,21},
+                {10,55}
         };
     }
 
