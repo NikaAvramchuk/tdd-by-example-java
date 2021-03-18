@@ -12,16 +12,18 @@ public class FibonacciTest {
     }
 
     private int fib(int number) {
-        if(number==0)
-            return 0;
-        return 1;
+        if(number==0) return 0;
+        if(number<=2) return 1;
+        return 2;
     }
 
     @DataProvider
     public Object[][] dpMethod(){
         return new Object[][] {
                 {0,0},
-                {1,1}
+                {1,1},
+                {2,1},
+                {3,2}
         };
     }
 
